@@ -1,3 +1,8 @@
+*.las
+*.mbtiles
+*journal
+*geojsonseq
+
 # Logs
 logs
 *.log

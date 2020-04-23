@@ -1,0 +1,164 @@
+{
+  "center": [
+    138.187709,
+    34.617397
+  ],
+  "layers": [
+    {
+      "id": "ort",
+      "source": "i",
+      "type": "raster"
+    },
+    {
+      "id": "a",
+      "paint": {
+        "circle-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "height"
+          ],
+          120,
+          "green",
+          220,
+          "yellow",
+          320,
+          "aqua",
+          420,
+          "lime",
+          520,
+          "red",
+          720,
+          "purple"
+        ],
+        "circle-radius": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          22,
+          2,
+          26,
+          8
+        ]
+      },
+      "source": "v",
+      "source-layer": "a",
+      "type": "circle"
+    },
+    {
+      "id": "b",
+      "paint": {
+        "circle-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "height"
+          ],
+          120,
+          "green",
+          220,
+          "yellow",
+          320,
+          "aqua",
+          420,
+          "lime",
+          520,
+          "red",
+          720,
+          "purple"
+        ],
+        "circle-radius": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          22,
+          2,
+          26,
+          8
+        ]
+      },
+      "source": "v",
+      "source-layer": "b",
+      "type": "circle"
+    },
+    {
+      "id": "m",
+      "paint": {
+        "circle-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "height"
+          ],
+          120,
+          "green",
+          220,
+          "yellow",
+          320,
+          "aqua",
+          420,
+          "lime",
+          520,
+          "red",
+          720,
+          "purple"
+        ],
+        "circle-radius": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          22,
+          2,
+          26,
+          8
+        ]
+      },
+      "source": "v",
+      "source-layer": "m",
+      "type": "circle"
+    }
+  ],
+  "sources": {
+    "i": {
+      "attribution": "地理院タイル",
+      "maxzoom": 18,
+      "minzoom": 0,
+      "tiles": [
+        "https://maps.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg"
+      ],
+      "type": "raster"
+    },
+    "v": {
+      "attribution": "静岡県ポイントクラウドデータベース",
+      "maxzoom": 24,
+      "minzoom": 12,
+      "tiles": [
+        "http://localhost:9966/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "version": 8,
+  "zoom": 16
+}
