@@ -1,7 +1,7 @@
 {
   "center": [
-    138.187709,
-    34.617397
+    138.938616,
+    34.79182
   ],
   "layers": [
     {
@@ -10,29 +10,11 @@
       "type": "raster"
     },
     {
-      "id": "a",
+      "id": "p",
       "paint": {
         "circle-color": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "get",
-            "height"
-          ],
-          120,
-          "green",
-          220,
-          "yellow",
-          320,
-          "aqua",
-          420,
-          "lime",
-          520,
-          "red",
-          720,
-          "purple"
+          "get",
+          "rgb"
         ],
         "circle-radius": [
           "interpolate",
@@ -42,100 +24,14 @@
           [
             "zoom"
           ],
-          22,
-          2,
+          18,
+          1.3,
           26,
-          8
+          4
         ]
       },
       "source": "v",
-      "source-layer": "a",
-      "type": "circle"
-    },
-    {
-      "id": "b",
-      "paint": {
-        "circle-color": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "get",
-            "height"
-          ],
-          120,
-          "green",
-          220,
-          "yellow",
-          320,
-          "aqua",
-          420,
-          "lime",
-          520,
-          "red",
-          720,
-          "purple"
-        ],
-        "circle-radius": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          22,
-          2,
-          26,
-          8
-        ]
-      },
-      "source": "v",
-      "source-layer": "b",
-      "type": "circle"
-    },
-    {
-      "id": "m",
-      "paint": {
-        "circle-color": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "get",
-            "height"
-          ],
-          120,
-          "green",
-          220,
-          "yellow",
-          320,
-          "aqua",
-          420,
-          "lime",
-          520,
-          "red",
-          720,
-          "purple"
-        ],
-        "circle-radius": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          22,
-          2,
-          26,
-          8
-        ]
-      },
-      "source": "v",
-      "source-layer": "m",
+      "source-layer": "p",
       "type": "circle"
     }
   ],
@@ -154,11 +50,11 @@
       "maxzoom": 24,
       "minzoom": 12,
       "tiles": [
-        "http://localhost:9966/zxy/{z}/{x}/{y}.pbf"
+        "https://optgeo.github.io/seven-falls/zxy/{z}/{x}/{y}.pbf"
       ],
       "type": "vector"
     }
   },
   "version": 8,
-  "zoom": 16
+  "zoom": 17
 }

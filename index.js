@@ -11,6 +11,11 @@ csv.transform(r => {
   const rgb = '#' + [r[3], r[4], r[5]].map(v => {
     return (parseInt(v) >> 12).toString(16)
   }).join('')
+  let minzoom = process.env.LAYER === 'm' ?
+    21 :
+    process.env.LAYER === 'a' ?
+      12 :
+      18
   let f = {
     type: 'Feature',
     geometry: {
@@ -20,9 +25,13 @@ csv.transform(r => {
     properties: {
       height: parseFloat(r[2]),
       rgb: rgb
+//      c: parseInt(r[6]),
+//      t: process.env.LAYER
     },
     tippecanoe: {
-      layer: process.env.LAYER
+      layer: 'p',
+      minzoom: minzoom,
+      maxzoom: 24
     }
   }
   return `\x1e${JSON.stringify(f)}\n`
